@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color:#ff3e5f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow:hidden;
+}
+
+.container{
+    width: 480px;
+    height: 480px;
+    background-color:blue;
+    border-radius:50%;
+    border: 6px solid rgb(0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    transform: 5s;
+}
+
+.container div{
+    height: 50%;
+    width: 200px;
+    position: absolute;
+    clip-path: polygon(100% 0, 50% 100% , 0 0);
+    transform: translate(-50px);
+    transform-origin: bottom;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left:135px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+.container span{
+    bottom:50px;
+    font-size:20px;
+    font-weight: bold;
+    color:white;
+    position: relative;
+}
+
+#one{
+    background-color:blue;
+    left: 40%;
+}
+#two{
+    background-color:red;
+    transform: rotate(45deg); 
+}
+#three{
+    background-color:#00ff62;
+    transform: rotate(90deg);
+}
+#four{
+    background-color:#0084ff;
+    transform: rotate(135deg);
+}
+#five{
+    background-color:#ff00ea;
+    transform: rotate(180deg);
+}
+#six{
+    background-color:#00ffea;
+    transform: rotate(225deg);
+}
+#seven{
+    background-color:#73ff00;
+    transform: rotate(270deg);
+}
+#eight{
+    background-color:#ff6600;
+    transform: rotate(315deg);
+}
+
+.pushable{
+    background: hsl(340deg 100% 32%);
+    border-radius: 12px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+}
+
+.front {
+    display: block;
+    padding: 12px 42px;
+    border-radius: 12px;
+    font-size: 1.25rem;
+    background: hsl(345deg 100% 47%);
+    color: white;
+    transform: translateY(-6px);
+}
+
+.pushable:active .front {
+    transform: translateY(-2px);
+}
+
