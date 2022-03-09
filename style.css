@@ -18,7 +18,7 @@ body{
 .container{
     width: 480px;
     height: 480px;
-    background-color:blue;
+    background-color:#1c81f5;
     border-radius:50%;
     border: 6px solid rgb(0, 0, 0);
     position: relative;
@@ -43,39 +43,40 @@ body{
     font-weight: bold;
     color:white;
     font-size:20px;
+    font-family: cursive;
     
 }
 
 .container .one{
-    background-color:blue;
+    background-color:#1c81f5;
     left: 40%;
 }
 .container .two{
-    background-color:red;
+    background-color:#e25151;
     transform: rotate(45deg); 
 }
 .container .three{
-    background-color:#00ff62;
+    background-color:#fca522;
     transform: rotate(90deg);
 }
 .container .four{
-    background-color:#0084ff;
+    background-color:#3aee85;
     transform: rotate(135deg);
 }
 .container .five{
-    background-color:#ff00ea;
+    background-color:#f366e7;
     transform: rotate(180deg);
 }
 .container .six{
-    background-color:#00ffea;
+    background-color:#6bece1;
     transform: rotate(225deg);
 }
 .container .seven{
-    background-color:#73ff00;
+    background-color:#f5dc4d;
     transform: rotate(270deg);
 }
 .container .eight{
-    background-color:#ff6600;
+    background-color:#f88f48;
     transform: rotate(315deg);
 }
 
@@ -87,7 +88,7 @@ body{
     cursor: pointer;
     outline-offset: 4px;
     position: absolute;
-    right:45px;
+    right:35px;
     animation: zoom-in-zoom-out 2s ease-out infinite;
 }
 
@@ -100,6 +101,7 @@ body{
     background: hsl(345deg 100% 47%);
     color: white;
     transform: translateY(-6px);
+    font-family: cursive;
 }
 
 .spin:active .front {
@@ -126,9 +128,25 @@ body{
 #reset{
     display: none;
 }
+
 #reset.visible{
     display: block;
-    font-size:100px;
+    background: hsl(340deg 100% 32%);
+    border-radius: 12px;
+    border: solid black;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+    position: absolute;
+    left:45px;
+    bottom: 20px;
+    padding: 12px 42px;
+    border-radius: 12px;
+    font-size: 0.7rem;
+    font-family: cursive;
+    background: hsl(345deg 100% 47%);
+    color: white;
+
 } 
 
 
@@ -149,11 +167,51 @@ body{
     display: none;
 }
 
-#link.visible{
-    display: block;
-    font-size:100px;
+
+
+#link.visible { 
     position: absolute;
-    color:#73ff00;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    font-family: cursive;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: cursive;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    left:45px;
+    bottom: 80px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
 }
 
+#link:disabled {
+    pointer-events: none;
+}
 
+#link:hover {
+    color: #fff;
+    background-color: hsl(345deg 100% 47%);
+    box-shadow: hsl(345deg 100% 47%);
+    transform: translateY(-2px);
+}
+
+#link:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
