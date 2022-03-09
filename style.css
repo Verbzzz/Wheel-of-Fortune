@@ -91,6 +91,10 @@ body{
     animation: zoom-in-zoom-out 2s ease-out infinite;
 }
 
+button.invisible {
+    display: none;
+}
+
 .front {
     display: block;
     padding: 12px 42px;
@@ -125,7 +129,19 @@ body{
 
 }
 
+#link{
+    display: none;
+    font-size:100px;
+    position: absolute;
+    bottom: 40%;
+}
 
+#link.visible{
+    display: block;
+    font-size:100px;
+    position: absolute;
+    color:#73ff00;
+}
 
 
 
