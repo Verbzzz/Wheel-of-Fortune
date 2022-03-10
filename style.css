@@ -15,6 +15,18 @@ body{
     overflow:hidden;
 }
 
+.bio{
+    position: absolute;
+    font-family: cursive;
+    color: white;
+    width: 250px;
+    top:10%;
+    left:2%;
+    border: 2px solid rgb(0, 0, 0);
+    background-color:hsl(345deg 100% 47%);
+    border-radius: 12px;
+}
+
 .container{
     width: 480px;
     height: 480px;
@@ -22,6 +34,7 @@ body{
     border-radius:50%;
     border: 6px solid rgb(0, 0, 0);
     position: relative;
+    top:10%;
     overflow: hidden;
     transition: 5s;
 }
@@ -88,8 +101,13 @@ body{
     cursor: pointer;
     outline-offset: 4px;
     position: absolute;
-    right:35px;
+    top:40%;
+    right:10%;
     animation: zoom-in-zoom-out 2s ease-out infinite;
+}
+
+#spin.Invisible{
+    display:none;
 }
 
 
@@ -121,9 +139,6 @@ body{
     }
 
 
-#spin.Invisible{
-    display:none;
-}
 
 #reset{
     display: none;
@@ -138,21 +153,19 @@ body{
     cursor: pointer;
     outline-offset: 4px;
     position: absolute;
-    left:45px;
+    left:2%;
     bottom: 20px;
     padding: 12px 42px;
-    border-radius: 12px;
     font-size: 0.7rem;
     font-family: cursive;
     background: hsl(345deg 100% 47%);
     color: white;
-
 } 
 
 
 #arrow {
     position: absolute;
-    top: 120px;
+    right:center;
     cursor: pointer;
     transform-origin: top center;
     width: 0;
@@ -161,6 +174,7 @@ body{
     border-width: 60px 30px 0 30px;
     border-color: black transparent transparent transparent;
     z-index: 9;
+    top:2%;
 }
 
 #link{
@@ -189,7 +203,7 @@ body{
     min-width: 0;
     outline: none;
     padding: 16px 24px;
-    left:45px;
+    left:2%;
     bottom: 80px;
     text-align: center;
     text-decoration: none;
@@ -215,3 +229,39 @@ body{
     box-shadow: none;
     transform: translateY(0);
 }
+
+@media screen and (max-width: 500px) {
+    .container{
+        width: 300px;
+        height: 300px;
+    }
+    .container div{
+        height: 50%;
+        width: 150px;
+        font-size:13px;
+        left:23%; 
+    }
+    .container .one{
+        left: 43%;
+    }
+    .bio{
+        top:0%;
+    }
+    #arrow{
+        top:25%;
+    }
+    #spin{
+        top:80%;
+        right:30%;
+    }
+    .front{
+        font-size: 1rem;
+    }
+    #link.visible{
+        font-size: 15px;
+    }
+
+
+
+}
+    

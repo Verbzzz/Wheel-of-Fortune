@@ -27,7 +27,7 @@ function winAttraction(){
     let position = deg%360;
 
     if(position < 22.5){
-        link.setAttribute("href","https://letmegooglethat.com/?q=bars");
+        link.setAttribute("href","https://letmegooglethat.com/?q=Skydiving");
     }
 
     if(position > 22.5 && position < 67.5){
@@ -43,7 +43,7 @@ function winAttraction(){
     }
 
     if(position > 157.5 && position < 202.5){
-        link.setAttribute("href","https://letmegooglethat.com/?q=Skydiving");
+        link.setAttribute("href","https://letmegooglethat.com/?q=bars");
     }
 
     if(position > 202.5 && position < 247.5){
