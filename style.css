@@ -17,7 +17,7 @@ body{
 
 .bio{
     position: absolute;
-    font-family: cursive;
+    font-family: Verdana;
     color: white;
     width: 250px;
     top:10%;
@@ -53,10 +53,9 @@ body{
     left:135px;
     writing-mode: vertical-rl;
     text-orientation: mixed;
-    font-weight: bold;
     color:white;
     font-size:20px;
-    font-family: cursive;
+    font-family: Verdana;
     
 }
 
@@ -119,7 +118,7 @@ body{
     background: hsl(345deg 100% 47%);
     color: white;
     transform: translateY(-6px);
-    font-family: cursive;
+    font-family: Verdana;
 }
 
 .spin:active .front {
@@ -157,7 +156,7 @@ body{
     bottom: 20px;
     padding: 12px 42px;
     font-size: 0.7rem;
-    font-family: cursive;
+    font-family: Verdana;
     background: hsl(345deg 100% 47%);
     color: white;
 } 
@@ -193,10 +192,9 @@ body{
     color: black;
     cursor: pointer;
     display: inline-block;
-    font-family: cursive;
     font-size: 30px;
     font-weight: 600;
-    font-family: cursive;
+    font-family: Verdana;
     line-height: normal;
     margin: 0;
     min-height: 60px;
@@ -240,14 +238,12 @@ body{
         width: 150px;
         font-size:13px;
         left:23%; 
-        font-family: cursive;
     }
     .container .one{
         left: 43%;
     }
     .bio{
         top:0%;
-        font-family: cursive;
     }
     #arrow{
         top:25%;
@@ -262,8 +258,5 @@ body{
     #link.visible{
         font-size: 15px;
     }
-
-
-
 }
     
