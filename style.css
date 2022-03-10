@@ -240,18 +240,20 @@ body{
         width: 150px;
         font-size:13px;
         left:23%; 
+        font-family: cursive;
     }
     .container .one{
         left: 43%;
     }
     .bio{
         top:0%;
+        font-family: cursive;
     }
     #arrow{
         top:25%;
     }
     #spin{
-        top:80%;
+        top:90%;
         right:30%;
     }
     .front{
