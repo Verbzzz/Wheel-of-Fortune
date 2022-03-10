@@ -1,3 +1,3 @@
 # Wheel-of-Fortune
 
-Link to the web site: the-wheel-of-fortune.netlify.app
+Link to the web site: https://the-wheel-of-fortune.netlify.app/
